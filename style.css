@@ -1,0 +1,65 @@
+body {
+  height: 100%;
+  background: linear-gradient(140deg, #5EFF93 0%,#27DFFF 100%);
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.video {
+  width: 60vmax;
+  height: 40vmax;
+  max-height: 70vh;
+  max-width: 70vw;
+  background: #000;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.controls {
+  background: #fff;
+  margin: 0 1em;
+  padding: .5em;
+  display: grid;
+  grid-gap: .5em;
+  border-radius: 0 0 3px 3px;
+}
+
+.range {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+.name {
+  margin: 0;
+  grid-column: 1;
+}
+
+.frame {
+  grid-column: 2;
+  text-align: right;
+}
+
+.name, .frame {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.extra {
+  opacity: 0.3;
+}
+
+a {
+    color: #00b3c3;
+    text-decoration: none;
+}
+
+canvas {
+  object-fit: cover
+}
